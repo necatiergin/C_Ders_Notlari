@@ -11,7 +11,7 @@ X(GRAY) \
 X(MAGENTA)
 ```
 
-Makromuzu tek satır halinde de yazabilirdik. Ancak okunması daha kolay olsun diye listenin her bir öğesini ayrı bir satıra yazmayı tercih ettik. Makromuzun alt satırdan devam edebilmesi için ters bölü `(\\)` karakterinin kullanılması gerektiğini biliyorsunuz. Listemizdeki her bir ismin `X`'i izleyen bir parantez içine alındığını görüyorsunuz. Şimdi bu isimlerle bir numaralandırma `(enum)` türü oluşturuyoruz:
+Makromuzu tek satır halinde de yazabilirdik. Ancak okunması daha kolay olsun diye listenin her bir öğesini ayrı bir satıra yazmayı tercih ettik. Makromuzun alt satırdan devam edebilmesi için ters bölü `(\)` karakterinin kullanılması gerektiğini biliyorsunuz. Listemizdeki her bir ismin `X`'i izleyen bir parantez içine alındığını görüyorsunuz. Şimdi bu isimlerle bir numaralandırma `(enum)` türü oluşturuyoruz:
 
 ```
 #define  XCOLORS \
