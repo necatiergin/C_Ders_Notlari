@@ -67,24 +67,15 @@ void func(size_t size)
 Değişken boyutta diziler ve bunların türevi olan türlere (gösterici, dizi vs.) Değişkene bağlı türler `(Variably - modified types)` deniyor.  Değişkene boyutlu bir diziyi gösteren bir gösterici değişken tanımlayalım:
 ```
 
-//buraya ekleme yapılacak
-#include <stdio.h>
-
 void func(int n)
 {
 	int a[n];
+	int (*p)[n] = &a;
 
-	printf("boyut = %zu\n", sizeof(a) / sizeof(*a));
-	//...
-}
-
-int main()
-{
-	for (int i = 1; i <= 10; ++i) {
-		func(i);
+	for (int i = 0; i < n; ++i) {
+		(*p)[n] = i;
 	}
 }
-```
 
 Dinamik matrislerin bellekte ardışık olarak oluşturulmasında değişken boyutlu bir matrisi gösteren gösterici değişkenin kullanılması diziyi dolaşan kodların daha kolay ve daha doğal yazılmasını sağlar.
 
@@ -123,7 +114,7 @@ int main()
         printf("\n");
 	}
 	
-    free(pd);
+    free(p);
 }
 ```
 
