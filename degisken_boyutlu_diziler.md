@@ -76,6 +76,7 @@ void func(int n)
 		(*p)[n] = i;
 	}
 }
+```
 
 Dinamik matrislerin bellekte ardışık olarak oluşturulmasında değişken boyutlu bir matrisi gösteren gösterici değişkenin kullanılması diziyi dolaşan kodların daha kolay ve daha doğal yazılmasını sağlar.
 
