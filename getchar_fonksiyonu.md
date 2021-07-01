@@ -16,3 +16,5 @@ getchar fonksiyonu çağrıldığında standart giriş akımının tamponu boş 
 #define   EOF   (-1)
 ```
 
+__getchar__ fonksiyonu ile _scanf_ fonksiyonu aynı buffer'ı kullanıyorlar.
+
